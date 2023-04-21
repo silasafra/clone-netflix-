@@ -1,0 +1,11 @@
+header {
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, #141414, transparent);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 30px;
+  width: 100%;
+}

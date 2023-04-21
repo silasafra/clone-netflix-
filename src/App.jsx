@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import Header from './assets/componentes/Header';
 import FeaturedMovies from './assets/componentes/FeaturedMovies';
 import Tmdb from './Tmdb';
 import MovieRow from './assets/componentes/MovieRow';
@@ -27,6 +28,7 @@ export default () => {
   }, []);
   return (
     <div className="page">
+      <Header />
       {featureData && <FeaturedMovies item={featureData} />}
       <section className="list">
         {movieLIst.map((item, key) => (

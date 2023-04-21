@@ -11,7 +11,7 @@
 .featured--horizontal {
   width: inherit;
   height: inherit;
-  background: linear-gradient(to right, #141414 30%, transparent 90%);
+  /* background: linear-gradient(to right, #141414 30%, transparent 90%); */
 }
 
 .featured--list-info {
