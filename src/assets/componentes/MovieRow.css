@@ -10,9 +10,7 @@
   overflow-x: hidden;
   padding-left: 30px;
 }
-.movieRow--list {
-  width: 88899px;
-}
+
 .movieRow--item {
   display: inline-block;
   width: 150px;
@@ -27,7 +25,9 @@
 .movieRow--item img:hover {
   transform: scale(1);
 }
-
+.movieRow--list {
+  transition: all 0.3s ease-in-out;
+}
 .movieRow--left,
 .movieRow--right {
   position: absolute;
