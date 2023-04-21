@@ -16,26 +16,29 @@ export default ({ item }) => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${item.backdrop_path})`
-        // `url(https://image.tmbd.org/t/p/original${item.backdrop_path})`
       }}
     >
       <div className="featured--vertical">
         <dir className="featured--horizontal">
-          <div className="featured-name">{item.original_name}</div>
           <div className="featured--info">
-            <div className="featured--points">{item.vote_average} pontos</div>
-            <div className="featured-year">{firstDate.getFullYear()}</div>
-            <div className="featured--seasons">
-              {item.number_of_seasons} temporada
-              {item.number_of_seasons !== 1 ? 's' : ''}
+            <div className="featured-name">{item.original_name}</div>
+            <div className="featured--list-info">
+              <div className="featured--points">
+                {item.vote_average} ponto{item.vote_average !== 1 ? 's' : ''}
+              </div>
+              <div className="featured-year">{firstDate.getFullYear()}</div>
+              <div className="featured--seasons">
+                {item.number_of_seasons} temporada
+                {item.number_of_seasons !== 1 ? 's' : ''}
+              </div>
             </div>
             <div className="featured--overview">{item.overview}</div>
             <div className="featured--buttons">
-              <a className="btn btn-main" href={`/watch/${item.id}`}>
+              <a className="btn btn-primary" href={`/watch/${item.id}`}>
                 Assistir
               </a>
-              <a className="btn btn-main" href={`/list/add${item.id}`}>
-                Minha lista
+              <a className="btn btn-secondary" href={`/list/add${item.id}`}>
+                Mais informações
               </a>
             </div>
             <div className="featured--genres">{genres.join(', ')}</div>

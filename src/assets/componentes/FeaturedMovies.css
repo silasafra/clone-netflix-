@@ -14,16 +14,64 @@
   background: linear-gradient(to right, #141414 30%, transparent 90%);
 }
 
-.btn  {
-  background: #ffffff;
+.featured--list-info {
+  display: flex;
+  gap: inherit;
+}
+
+.featured-name {
+  font-size: 59px;
+  font-weight: 700;
+}
+.featured--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  margin-left: 30px;
+  width: 600px;
+  height: 100%;
+}
+
+.featured--overview {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.featured--buttons {
+  display: flex;
+  gap: 16px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 62px;
-  width: 170px;
   border-radius: 4px;
   padding: 15px 30px 15px 30px;
   text-decoration: none;
-  color: #141414;
   font-size: 22px;
-  Line height:25.78px;
+  line-height: 25px;
   font-weight: 700;
+}
 
+.btn-primary {
+  background: #ffffff;
+  color: #141414;
+  transition: 0.2s ease;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #d9d9d9;
+  color: #141414;
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
