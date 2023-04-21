@@ -4,7 +4,7 @@ import './Footer.css';
 export default () => {
   return (
     <footer>
-      <div>feito com ❤️ por Silas Afra</div>
+      <div>feito com ❤️ por Silas</div>
     </footer>
   );
 };
