@@ -1,0 +1,29 @@
+.featured {
+  height: 600px;
+}
+
+.featured--vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #141414 10%, transparent 90%);
+}
+
+.featured--horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #141414 30%, transparent 90%);
+}
+
+.btn  {
+  background: #ffffff;
+  height: 62px;
+  width: 170px;
+  border-radius: 4px;
+  padding: 15px 30px 15px 30px;
+  text-decoration: none;
+  color: #141414;
+  font-size: 22px;
+  Line height:25.78px;
+  font-weight: 700;
+
+}
