@@ -4,6 +4,7 @@ import Header from './assets/componentes/Header';
 import FeaturedMovies from './assets/componentes/FeaturedMovies';
 import Tmdb from './Tmdb';
 import MovieRow from './assets/componentes/MovieRow';
+import Footer from './assets/componentes/Footer';
 
 export default () => {
   const [movieLIst, setMovieList] = useState([]);
@@ -35,6 +36,7 @@ export default () => {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import React from 'react';
 import './FeaturedMovies.css';
+import Play from '../../icons/Play.png';
+import Detail from '../../icons/Detail.png';
 
 export default ({ item }) => {
   // Obtendo a Data de lançamento
@@ -35,9 +37,10 @@ export default ({ item }) => {
             <div className="featured--overview">{item.overview}</div>
             <div className="featured--buttons">
               <a className="btn btn-primary" href={`/watch/${item.id}`}>
-                Assistir
+                <img src={Play} alt="" /> Assistir
               </a>
               <a className="btn btn-secondary" href={`/list/add${item.id}`}>
+                <img src={Detail} alt="" />
                 Mais informações
               </a>
             </div>
